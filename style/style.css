@@ -1,0 +1,263 @@
+
+/*style untuk bagian carausel*/
+.carousel-item img {
+    height:700px; /* height yang dibutuhkan */
+    object-fit: cover; /* untuk covernya */
+  }
+  
+  .carousel-caption h5,
+  .carousel-caption p {
+    color: rgb(87, 37, 15); /* warna text*/
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+  }
+  
+  @media (max-width: 768px) {
+    .carousel-item img {
+      height: 300px; 
+    }
+  }
+  
+  
+  
+  
+  
+  /* Kontak/biodata Section Styling */
+.kontak {
+    padding: 50px 0;
+}
+
+.kontak .container {
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+    background: #130e0a;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(241, 149, 1, 0.852);
+    margin-bottom: 50px; /* Add margin to separate from footer */
+}
+
+.kontak header {
+    font-size: 1.2rem;
+    color: #000;
+    font-weight: 600;
+    text-align: center;
+}
+
+.kontak .form {
+    margin-top: 15px;
+}
+
+.form .input-box {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.input-box label {
+    color: #d4910a;
+}
+
+.form :where(.input-box input, .select-box) {
+    position: relative;
+    height: 35px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: #9aa1a5;
+    margin-top: 5px;
+    border: 1px solid #EE4E34;
+    border-radius: 6px;
+    padding: 0 15px;
+    background: #FCEDDA;
+}
+
+.input-box input:focus {
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.form .column {
+    display: flex;
+    column-gap: 15px;
+}
+
+.form .gender-box {
+    margin-top: 10px;
+}
+
+.form :where(.gender-option, .gender) {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    flex-wrap: wrap;
+}
+
+.form .gender {
+    column-gap: 5px;
+}
+
+.gender input {
+    accent-color: #883512;
+}
+
+.form :where(.gender input, .gender label) {
+    cursor: pointer;
+}
+
+.gender label {
+    color: #f7fb03f1;
+}
+
+.interest{
+    color: #bdca34ea;
+}
+
+.address :where(input, .select-box) {
+    margin-top: 10px;
+    
+}
+
+.select-box select {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    color: #ab2020;
+    font-size: 1rem;
+    background: #FCEDDA;
+}
+
+.form button {
+    height: 40px;
+    width: 100%;
+    color: #f1b207;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: #97706a;
+}
+
+.form button:hover {
+    background: #EE3E34;
+}
+
+
+/* Result Modal Styling */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #ded8cf;
+    margin: 10% auto; /* 10% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 35%; /* mengatur kotaknya */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+
+/* Add Animation */
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+.close {
+    color: #f20707;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal h3 {
+    font-size: 1.5rem;
+    color: #4e381d;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.modal p {
+    font-size: 1rem;
+    color: #000;
+    margin: 10px 0;
+}
+
+.modal p strong {
+    color: #EE4E34;
+}
+
+
+
+
+/* Footer Section Styling */
+footer {
+    padding: 5px 0;
+    background-color: rgb(0, 0, 0);
+    color: rgb(121, 25, 25);
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer .row {
+    width: 100%;
+}
+
+footer h3 {
+    margin-bottom: 1.5rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer .socialContainer {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s;
+}
+
+footer .socialContainer:hover {
+    background: #000000;
+    color: #ffffff;
+}
+
+footer .socialSvg {
+    width: 24px;
+    height: 24px;
+}
+
